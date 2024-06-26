@@ -8,6 +8,10 @@ function Nav() {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    }
+
     useEffect(() => {
         const handleOutsideClick = (event) => {
             if (isMenuOpen && !event.target.closest('.navbar-collapse') && !event.target.closest('.navbar-toggler')) {
@@ -40,22 +44,22 @@ function Nav() {
             <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#about">A propos</a>
+                        <a className="nav-link js-scroll-trigger" href="#about" onClick={closeMenu}>A propos</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#experience">Experiences</a>
+                        <a className="nav-link js-scroll-trigger" href="#experience" onClick={closeMenu}>Experiences</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#education">Formations</a>
+                        <a className="nav-link js-scroll-trigger" href="#education" onClick={closeMenu}>Formations</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#skills">Compétences</a>
+                        <a className="nav-link js-scroll-trigger" href="#skills" onClick={closeMenu}>Compétences</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#perso">Réalisations professionnelles</a>
+                        <a className="nav-link js-scroll-trigger" href="#perso" onClick={closeMenu}>Réalisations professionnelles</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link js-scroll-trigger" href="#interests">Intérêts</a>
+                        <a className="nav-link js-scroll-trigger" href="#interests" onClick={closeMenu}>Intérêts</a>
                     </li>
                 </ul>
             </div>
