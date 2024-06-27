@@ -12,7 +12,7 @@ function SectionApropos() {
             </div>
             <p className="lead mb-5">
             Fort d’une expérience de deux ans chez Consort NT en tant que développeur PHP,
-            j’ai pu mettre approfondir mes compétences lors de différents projets.
+            j’ai pu approfondir mes compétences lors de différents projets.
             <br/>
             J’ai pu travailler sur des applications nécessitant du développement Back-End et Font-End avec le framework CodeIgniter pour EDF.
             <br/>
