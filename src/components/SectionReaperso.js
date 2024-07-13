@@ -1,6 +1,6 @@
 import React from 'react';
-import luciole from '../img/luciole.jfif';
-import dansedesalon from '../img/dansedesalon.jfif';
+import luciole from '../img/luciole.png';
+import dansedesalon from '../img/dansedesalon.png';
 
 function SectionReaperso() {
     return (  
