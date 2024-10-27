@@ -1,4 +1,5 @@
 import React from 'react';
+import Cftc from './experiences/Cftc';
 import Consort from './experiences/Consort';
 import Philes from './experiences/Philes';
 import Obd from './experiences/Obd';
@@ -12,21 +13,22 @@ function SectionExp() {
         <section className="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
         <div className="w-100">
           <h2 className="mb-5">Experiences</h2>
-
     {/* EXPERIENCE Consort*/}       
-            <Consort/>
+                <Cftc/>
+    {/* EXPERIENCE Consort*/}       
+                <Consort/>
     {/* EXPERIENCE Philes*/}
-            <Philes/>
+                <Philes/>
     {/* EXPERIENCE Outils OBD Facile*/}
-            <Obd/>
+                 <Obd/>
     {/* EXPERIENCE Izianet*/}
-            <Izianet/>
+                <Izianet/>
     {/*  EXPERIENCE MGS Consulting Ouest*/}
-            <Mgs/>
+                 <Mgs/>
     {/*  EXPERIENCE SAB Informatique*/}
-            <Sab/>
+                 <Sab/>
     {/* EXPERIENCE SeeWeb*/}
-            <Seeweb/>
+                <Seeweb/>
         </div>
       </section>
     );
