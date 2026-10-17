@@ -1,28 +1,35 @@
 import React from 'react';
 import luciole from '../img/luciole.png';
+import lulubingo from '../img/lulubingo.png';
 import dansedesalon from '../img/dansedesalon.png';
 
 function SectionReaperso() {
-    return (  
+    return (
         <section className="resume-section p-3 p-lg-5 d-flex align-items-center perso" id="perso">
-                <div className="w-100">
-                        <h2 className="mb-5">Réalisations personnelles</h2>
-                        <div className="d-flex flex-wrap justify-content-between justify-content-sm-center gap-3">
-                                <div>
-                                        <a href="https://luciole.vercel.app/" target="_blank" rel="noreferrer">
-                                                <img src={luciole} alt="Aperçu du site luciole" />
-                                                <p className="subheading text-center">Site de Luciole</p>
-                                        </a>
-                                </div>
-                                <div>
-                                        <a href="https://dansedesalonsaintave.fr/" target="_blank" rel="noreferrer">
-                                                <img src={dansedesalon} alt="Aperçu du site danse de salon" />
-                                                <p className="text-center subheading">Site de l'association de danse de salon de St Avé</p>
-                                        </a>
-                                </div>
-                        </div>
+            <div className="w-100">
+                <h2 className="mb-5">Réalisations personnelles</h2>
+                <div className="d-flex flex-wrap justify-content-between justify-content-sm-center gap-3">
+                    <div>
+                        <a href="https://luciole.vercel.app/" target="_blank" rel="noreferrer">
+                            <img src={luciole} alt="Aperçu du site luciole" />
+                            <p className="subheading text-center">Site de Luciole</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://lulubingo.vercel.app/" target="_blank" rel="noreferrer">
+                            <img src={lulubingo} alt="Aperçu du site de bingo sur twitch" />
+                            <p className="text-center subheading">Site de bingo sur twitch</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://dansedesalonsaintave.fr/" target="_blank" rel="noreferrer">
+                            <img src={dansedesalon} alt="Aperçu du site danse de salon" />
+                            <p className="text-center subheading">Site de l'association de danse de salon de St Avé</p>
+                        </a>
+                    </div>
                 </div>
-      </section>
+            </div>
+        </section>
     );
 
 }
